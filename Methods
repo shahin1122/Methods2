@@ -1,0 +1,51 @@
+package String;
+
+public class str3 {
+
+	
+	public static void main(String []args) {
+		String a = "   Shahin shah      ";
+		
+		System.out.println(a);
+		
+		char ch = a.charAt(9);
+		System.out.println(ch);
+		
+		
+		int ascii = a.codePointAt(9);
+		System.out.println(ascii);
+		
+		int position = a.indexOf('h');
+		System.out.println("First H index number= "+position);
+		
+		int position2 = a.lastIndexOf('h');
+		System.out.println("Last H index Number= "+position2);
+		
+		//Normal
+		System.out.println(a);
+		//using trim() method
+		
+		String tr = a.trim();
+		System.out.println(tr);
+		
+		
+		//Replace method 
+		
+		
+		
+		String s = " Avenged sevenford is my favourite band. ";
+		
+		String rep = s.replace('e','z');
+		System.out.println(rep);
+		
+		//split method
+		
+		
+		String[] s4 = s.split(" ");
+		for(String x : s4){
+			System.out.println(x);
+			
+		}
+		
+		}
+}
